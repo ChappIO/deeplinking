@@ -95,6 +95,23 @@ form {
     text-decoration: none;
     font-family: monospace;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: crosshair;
+
+      i {
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
+
     &:not(:last-child) {
       margin-bottom: 12px;
     }
@@ -109,3 +126,5 @@ h2 {
 .subtitle {
   font-size: 0.9rem;
 }
+
+@import "~@fortawesome/fontawesome-free/css/all.min.css";

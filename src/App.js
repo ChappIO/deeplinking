@@ -37,6 +37,13 @@ export const App = () => {
                     {history.map((item, i) => (
                         <a key={i} href={item}>
                             {item}
+                            <button onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                setHistory(prev => prev.filter(v => v !== item));
+                            }}>
+                                <i className='fas fa-times-circle'/>
+                            </button>
                         </a>
                     ))}
                 </div>
