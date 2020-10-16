@@ -49,7 +49,7 @@ export const App = () => {
                 }}>
                     <div className="field">
                         <input value={value} required type="url" onChange={e => setValue(e.target.value)}/>
-                        <label>URL: protcol://...</label>
+                        <label>URL: my-app://path/to/link</label>
                     </div>
                     <input disabled={!isValidUrl(value)} type="submit" value="Open"/>
                 </form>
